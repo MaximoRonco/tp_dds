@@ -3,7 +3,16 @@ const router = express.Router();
 const db = require('../base-orm/sequelize-init')
 const { Op, ValidationError } = require("sequelize");
 
-
+router.get("/api/personajesDBZ", async function (req, res, next) {
+  try {
+      const data = await db.personajesDBZ.findAll({
+          attributes: ["IdPersonaje", "Nombre", "NivelDePoder", "fechaNacimiento"],
+      });
+      res.json(data);
+  } catch (error) {
+      next(error);
+  }
+});
 
 router.get("/api/personajesDBZ/:id", async function (req, res, next) {
     let data = await db.personajesDBZ.findAll({
