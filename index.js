@@ -11,7 +11,7 @@ app.use(express.json());
 const personajesDBZ = require("./rutas/personajes");
 app.use(personajesDBZ)
 
-const port = 3000;
+const port = 3000; // Esta es la linea original
 
 app.listen(port, () => {
     console.log("SERVIDOR INICIADO!")
