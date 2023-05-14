@@ -11,7 +11,11 @@ app.use(express.json());
 const personajesDBZ = require("./rutas/personajes");
 app.use(personajesDBZ)
 
+<<<<<<< HEAD
 const port = 3000; // Esta es la linea original
+=======
+const port = 2000; // Modificado
+>>>>>>> ramaConflicto
 
 app.listen(port, () => {
     console.log("SERVIDOR INICIADO!")
