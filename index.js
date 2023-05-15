@@ -14,7 +14,7 @@ app.use(personajesDBZ)
 
 
 
-const port = 3000; // Esta es la linea origin
+const port = 2000; 
 
 
 
