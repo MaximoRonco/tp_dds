@@ -11,7 +11,7 @@ app.use(express.json());
 const personajesDBZ = require("./rutas/personajes");
 app.use(personajesDBZ)
 
-const port = 3000; // Esta es la linea original
+const port = 3000; // Esta no es la linea original
 
 
 
