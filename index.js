@@ -3,6 +3,7 @@ const app = express();
 require("./base-orm/sqlite-init"); 
 
 app.get("/", (req, res) => {
+
     res.send("Backend memememme!");
 });
 
@@ -19,7 +20,9 @@ app.use(personajesDBZ)
 
 
 
-const port = 1500; 
+
+const port = 3000; 
+
 
 
 
