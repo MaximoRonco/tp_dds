@@ -48,7 +48,7 @@ const personajesDBZ = sequelize.define(
             validate: {
               notNull: {
                 args: true,
-                msg: "Activo es requerido",
+                msg: "Ingrese activo obligatoriamente",
               }
             }
           },
