@@ -32,7 +32,7 @@ const personajesDBZ = sequelize.define(
             validate: {
                 notNull: {
                     args: true,
-                    msg: 'El nivel de poder es requerido',
+                    msg: 'El nivel de poder es requerido esaaa',
                 },
             },
         },
