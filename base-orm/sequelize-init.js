@@ -22,6 +22,7 @@ const personajesDBZ = sequelize.define(
                 notEmpty: {
                     args: true,
                     msg: "Ingrese el nombre obligatoriamente",
+
                 },
             },
         },
