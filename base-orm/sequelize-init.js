@@ -49,6 +49,7 @@ const personajesDBZ = sequelize.define(
               notNull: {
                 args: true,
                 msg: "Ingrese activo obligatoriamente",
+
               }
             }
           },
