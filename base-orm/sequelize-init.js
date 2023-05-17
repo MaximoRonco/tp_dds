@@ -21,7 +21,7 @@ const personajesDBZ = sequelize.define(
             validate: {
                 notEmpty: {
                     args: true,
-                    msg: "Nombre es requerido",
+                    msg: "Ingrese el nombre",
                 },
             },
         },
