@@ -3,7 +3,7 @@ const app = express();
 require("./base-orm/sqlite-init"); 
 
 app.get("/", (req, res) => {
-    res.send("Backend");
+    res.send("Backend iniciado");
 });
 
 app.use(express.json());
