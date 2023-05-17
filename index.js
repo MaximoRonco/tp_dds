@@ -15,7 +15,7 @@ app.use(personajesDBZ)
 
 
 
-const port = 4000; 
+const port = 2000; 
 
 
 
