@@ -4,7 +4,8 @@ require("./base-orm/sqlite-init");
 
 app.get("/", (req, res) => {
 
-    res.send("Backend!");
+    res.send("Backend Inicia!");
+conflicto1
 });
 
 app.use(express.json());
