@@ -5,7 +5,7 @@ const { Op, ValidationError } = require("sequelize");
 
 router.get("/api/personajesDBZ", async function (req, res, next) {
   let data = await db.personajesDBZ.findAll ({
-      attributes: ["IdPersonaje","Nombre","NivelDePoder","fechaNacimiento"],
+      attributes: ["IdPersonaje","Nombre","NivelDePoder","fechaNacimiento", "Activo"],
   });
   res.status(200).json(data);
 })
@@ -18,6 +18,8 @@ router.get("/api/personajesDBZ/:id", async function (req, res, next) {
     if (data.length > 0 ) res.status(200).json(data[0]);
     else res.status(404).json({mensaje:'No econtrado!!'})
 })
+
+
 
 router.post("/api/personajesDBZ", async (req, res) => {
       let data = await db.personajesDBZ.create({
