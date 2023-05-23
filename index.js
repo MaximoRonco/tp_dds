@@ -3,9 +3,7 @@ const app = express();
 require("./base-orm/sqlite-init"); 
 
 app.get("/", (req, res) => {
-
-    res.send("Backend Inicia!");
-conflicto1
+    res.send("Backend Iniciado!");
 });
 
 app.use(express.json());
@@ -13,27 +11,7 @@ app.use(express.json());
 const personajesDBZ = require("./rutas/personajes");
 app.use(personajesDBZ)
 
-
-
-
-
-
-
-
-
-
 const port = 3000; 
-
-
-
-
-
-
-
-
-
-
-
 app.listen(port, () => {
     console.log("SERVIDOR INICIADO!")
 });
