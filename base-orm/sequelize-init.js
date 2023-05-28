@@ -8,12 +8,6 @@ const personajesDBZ = sequelize.define(
             primaryKey: true,
             autoIncrement: true,
             allowNull: false,
-            validate: {
-                notNull: {
-                  args: true,
-                  msg: "IdArticuloFamilia es requerido"
-                },
-            },
         },
         Nombre: {
             type: DataTypes.STRING(30),
