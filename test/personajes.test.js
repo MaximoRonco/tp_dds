@@ -1,6 +1,7 @@
 const request = require("supertest");
 const app = require("../index");
 const randomNum = Math.floor(Math.random() * 10000);
+
 const personajeAlta = {
     IdPersonaje: 199,
     Nombre: "NARUTO"+ randomNum.toString(),
